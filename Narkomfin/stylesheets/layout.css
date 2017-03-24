@@ -1,0 +1,105 @@
+a {
+color: inherit;
+}
+
+
+
+h1, h2, h3, p, ul, blockquote {
+
+  width: 700px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 1020px;
+  margin: 80px auto;
+}
+
+img + h2 {
+  margin-top: -1px;
+}
+
+img + p,
+img + blockquote,
+img + ul {
+  margin-top: -3px;
+}
+
+h2 + img {
+  margin-top: 82px;
+}
+
+h3 + img {
+  margin-top: 81px;
+}
+p + p {
+  margin-bottom: 32px;
+margin-top: 32px;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+
+
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 66px;
+}
+
+h1 + p {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+
+}
+p {
+  font-family: 'PT Sans', serif;
+  font-size: 19px;
+  line-height: 33px;
+}
+
+h2 {
+font-family: 'PT Sans Caption', sans-serif;
+font-size: 31px;
+font-weight: bold;
+line-height: 35px;
+margin-bottom: 0px;
+margin-top: 31px;
+}
+
+h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 5px;
+  margin-top: 33px;
+}
+blockquote {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 33px;
+  margin-bottom: 32px;
+  margin-top: 32px
+}
+
+li {
+  font-family: 'PT Sans', serif;
+  font-size: 19px;
+  line-height: 33px;
+  margin-bottom: 32px;
+  margin-top: 32px
+}
+p.end {
+  margin-bottom: 29px
+}
