@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 body
 
+=======
+>>>>>>> origin/master
 article h1,
 article h2,
 article h3,
 article p,
 article ul,
+<<<<<<< HEAD
 blockquote {
+=======
+article blockquote {
+>>>>>>> origin/master
   width: 700px;
   margin: 0 auto;
 }
@@ -69,10 +76,13 @@ article h3 {
   line-height: 34px;
 }
 
+<<<<<<< HEAD
 article ul {
   list-style-type: disc;
 }
 
+=======
+>>>>>>> origin/master
 article li {
   margin-top: 17px;
 }
@@ -92,8 +102,13 @@ article img + h2 {
 }
 
 article img + p,
+<<<<<<< HEAD
 img + blockquote,
 img + ul {
+=======
+article img + blockquote,
+article img + ul {
+>>>>>>> origin/master
   margin-top: -3px;
 }
 
