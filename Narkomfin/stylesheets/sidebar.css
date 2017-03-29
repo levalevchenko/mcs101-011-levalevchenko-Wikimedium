@@ -1,0 +1,13 @@
+nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+nav > ul > li:first-child {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 10px;
+  
+}
