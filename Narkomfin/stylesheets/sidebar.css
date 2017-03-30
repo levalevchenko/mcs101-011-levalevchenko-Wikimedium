@@ -1,44 +1,24 @@
-<<<<<<< HEAD
-nav {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-}
-
-nav > ul > li:first-child {
-  font-family: 'PT Sans Caption', sans-serif;
-  font-size: 9px;
-  font-weight: bold;
-  line-height: 10px;
-  
-=======
-a {
-text-decoration: none;
-
-}
 nav {
   position: fixed;
   top: 20px;
   left: 20px;
   width: 300px;
-  padding: 13px 30px 30px;
+  padding: 25px 30px 30px;
+  background: rgba(255,0,0,.5);
   font-size: 14px;
   line-height: 15px;
-  color: rgba(0,0,0,.8);
-  opacity: .1;
-  transition: all .3s ease-in-out;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-nav > ul > li:first-child {
-font-weight: bold;
+nav li:first-of-type {
+  font-weight: bold;
 }
 
-nav * ul {
+nav li {
+  margin-top: 12px;
+}
+
+nav > ul > li > ul {
   padding-left: 10px;
-  color: (0,0,0,.4)
-}
-
-nav:hover {
-  opacity: 1;
->>>>>>> origin/master
+  color: rgba(0, 0, 0, 0.4);
 }
