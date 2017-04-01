@@ -1,33 +1,33 @@
-nav {
+.sidebar {
   position: fixed;
-  top: 20px;
+  top: 50px;
   left: 20px;
   width: 300px;
-  padding: 25px 30px 30px;
+  padding: 13px 30px 30px;
   font-size: 14px;
   line-height: 15px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0,0,0,.8);
   opacity: .1;
   transition: all .3s ease-in-out;
 }
 
-nav:hover {
+.sidebar:hover {
   opacity: 1;
 }
 
-nav > ul > li:first-child {
-  font-weight: bold;
-}
-
-nav li {
+.sidebar li {
   margin-top: 12px;
 }
 
-nav li:hover {
+.sidebar li:hover {
   opacity: .8;
 }
 
-nav * ul {
+.sidebar > ul > li:first-child {
+  font-weight: bold;
+}
+
+.sidebar * ul {
   padding-left: 10px;
-  color: rgba(0, 0, 0,.4);
+  color: rgba(0,0,0,.4);
 }
