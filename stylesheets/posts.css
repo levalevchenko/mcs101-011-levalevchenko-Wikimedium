@@ -1,0 +1,17 @@
+.posts {
+  background-position: center -10px;
+  background-repeat: no-repeat;
+}
+
+.posts.bg {
+  background-image: url(../images/posts_mockup.png);
+
+
+}
+
+.postsFeed a {
+  background-color: rgba(255, 255, 2555, .2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .1);
+
+
+}

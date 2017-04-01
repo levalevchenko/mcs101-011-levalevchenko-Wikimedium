@@ -1,6 +1,5 @@
 article {
   padding-bottom: 80px;
-  padding-left: 180px;
 }
 
 article a {
@@ -130,9 +129,6 @@ article h3 + img {
   margin-top: 81px;
 }
 
-img {
-  padding-left: 90px;
-}
 
 @media all and (max-width: 1020px) {
   article img {
