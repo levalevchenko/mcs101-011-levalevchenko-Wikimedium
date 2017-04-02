@@ -1,13 +1,13 @@
-nav.menubar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
-  height: 50px;
+.menubar {
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 50px;
+  padding: 20px;
 }
 
 .logo {
@@ -15,17 +15,15 @@ nav.menubar {
   height: 16px;
   background-image: url(../images/logo.svg);
   background-size: cover;
-
 }
 
 .about {
   font-size: 14px;
   line-height: 50px;
-  color: rgba(0, 0, 0, .2);
-  transition: all 3s ease-in-out;
+  color: rgba(0,0,0,.2);
+  transition: all .3s ease-in-out;
 }
 
-about.hover {
-  color: rgba(0, 0, 0, .4);
-
+.about:hover {
+  color: rgba(0,0,0,.4);
 }
