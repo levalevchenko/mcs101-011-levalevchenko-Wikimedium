@@ -23,10 +23,33 @@ body.landing .menubar div {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }
 
+body.landing .share {
+  position: absolute;
+  right: auto;
+  bottom: 35px;
+  width: 100%;
+}
+
+body.landing .share p {
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.compact {
+  display: none;
+}
+
 .landingWrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1440px;
   margin: 0 auto;
@@ -42,25 +65,13 @@ body.landing .menubar div {
   overflow: hidden;
 }
 
-.mainSection.center nav {
-  font-size: 0;
-  margin-top: 70px;
-}
-
-
-.mainSection.center nav a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-
-.mainSection div {
+.mainSection section {
   position: absolute;
   top: 150px;
   width: 580px;
 }
 
-.mainSection.left div {
+.mainSection.left section {
   left: 160px;
 }
 
@@ -68,7 +79,7 @@ body.landing .menubar div {
   margin-left: -60px;
 }
 
-.mainSection.right div {
+.mainSection.right section {
   right: 160px;
 }
 
@@ -82,8 +93,8 @@ body.landing .menubar div {
   border-top: 1px solid #f7f7f7;
 }
 
-.mainSection.center div {
-  top: 160px;
+.mainSection.center section {
+  top: 180px;
   width: 100%;
 }
 
@@ -96,16 +107,26 @@ body.landing .menubar div {
   margin-top: 28px;
 }
 
+.mainSection.center nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.mainSection.center nav a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 .mainSection h2 {
-display: block;font-family: 'PT Sans Caption', sans-serif;
-font-size: 36px;
-line-height: 46px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 36px;
+  line-height: 46px;
 }
 
 .mainSection p {
-margin-top: 21px;
-font-size: 26px;
-line-height: 38px;
+  margin-top: 21px;
+  font-size: 26px;
+  line-height: 38px;
 }
 
 .mainSection .pattern {
@@ -144,7 +165,7 @@ line-height: 38px;
   width: 1348px;
   height: 779px;
   background-image: url(../images/landing/landing-mockup-3.jpg);
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
   border-radius: 5px;
 }
 
@@ -157,166 +178,171 @@ line-height: 38px;
   }
 }
 
-@media all and (max-width: 1180px) and (min-width: 910px) {
+@media all and (min-width: 910px) and (max-width: 1180px) {
   body.landing.bg {
     background-image: url(../images/index_mockup_ipad.png);
   }
-}
 
-.mainSection.center nav {
-  margin-top: 50px;
-}
+  .mainSection {
+    width: 1180px;
+    height: 568px;
+  }
 
+  .mainSection section {
+    top: 105px;
+    width: 410px;
+  }
 
-.mainSection.center nav a {
-  margin: 0 6px;
-}
+  .mainSection.left section {
+    left: 190px;
+  }
 
+  .mainSection.left .pattern {
+    margin-left: -40px;
+  }
 
+  .mainSection.right section {
+    right: 190px;
+  }
 
-.mainSection {
-  width: 1180px;
-  height: 568px;
-}
+  .mainSection.right .pattern {
+    margin-left: 300px;
+  }
 
-.mainSection div {
-  top: 105px;
-  width: 410px;
-}
+  .mainSection.center section {
+    top: 105px;
+  }
 
-.mainSection.left div {
-  left: 190px;
-}
+  .mainSection.center h2 {
+    font-size: 28px;
+    line-height: 37px;
+  }
 
-.mainSection.left .pattern {
-  margin-left: -40px;
-}
+  .mainSection.center p {
+    margin-top: 21px;
+  }
 
-.mainSection.right div {
-  right: 190px;
-}
+  .mainSection.center nav {
+    margin-top: 50px;
+  }
 
-.mainSection.right .pattern {
-  margin-left: 300px;
-}
+  .mainSection.center nav a {
+    margin: 0 6px;
+  }
 
-.mainSection h2 {
-  font-size: 26px;
-  line-height: 32px;
-}
+  .mainSection h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
 
-.mainSection p {
-  margin-top: 18px;
-  font-size: 18px;
-  line-height: 27px;
-}
+  .mainSection p {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+  }
 
-.mainSection .pattern {
-  width: 147px;
-  height: 14px;
-}
+  .mainSection .pattern {
+    width: 147px;
+    height: 14px;
+  }
 
-.mainSection.center div {
-  top: 105px;
-}
+  #mockup1 {
+    top: 85px;
+    right: 0;
+    width: 521px;
+    height: 470px;
+  }
 
-.mainSection.center h2 {
-  font-size: 28px;
-  line-height: 37px;
-}
+  #mockup2 {
+    top: 70px;
+    left: 148px;
+    width: 380px;
+    height: 478px;
+  }
 
-.mainSection.center p {
-  margin-top: 28px;
-}
-
-#mockup1 {
-  top: 85px;
-  right: 0px;
-  width: 521px;
-  height: 470px;
-}
-
-#mockup2 {
-  top: 70px;
-  left: 148px;
-  width: 380px;
-  height: 478px;
-}
-
-#mockup3 {
-  top: 68px;
-  right: -444px;
-  width: 960px;
-  height: 555px;
+  #mockup3 {
+    top: 68px;
+    right: -444px;
+    width: 960px;
+    height: 555px;
+  }
 }
 
 @media all and (max-width: 910px) {
   body.landing.bg {
-    background-image: url(../images/index_mockup_ipad-portrait.png);
+    background-image: url(../images/index_mockup_ipad_portrait.png);
   }
-}
 
-.mainSection {
-  width: 910px;
-  height: 1024px;
-}
+  .full {
+    display: none;
+  }
 
-.mainsection div {
-  top: 120px;
-}
+  .compact {
+    display: block;
+  }
 
-.mainSection.left div,
-.mainSection.right div {
-  left: 165px;
-  right: auto;
-}
+  .mainSection {
+    width: 910px;
+    height: 1024px;
+  }
 
-.mainSection .pattern {
-  margin-top: 50px;
-}
+  .mainSection section {
+    top: 120px;
+  }
 
-.mainSection.right .pattern {
-  margin-left: -60px;
-}
+  .mainSection.left section,
+  .mainSection.right section {
+    left: 165px;
+    right: auto;
+  }
 
-.mainSection:nth-child(4) .pattern {
-  margin-left: 430px;
-}
+  .mainSection .pattern {
+    margin-top: 50px;
+  }
 
-.mainSection.center div {
-  top: 105px;
-}
+  .mainSection.right .pattern {
+    margin-left: -60px;
+  }
 
-.mainSection.center h2 {
-  font-size: 46px;
-  line-height: 46px;
-}
+  .mainSection:nth-child(4) .pattern {
+    margin-left: 430px;
+  }
 
-.mainSection.center p {
-  margin-top: 21px;
-  font-size: 26px;
-  line-height: 38px;
-}
+  .mainSection.center section {
+    top: 105px;
+  }
 
-#mockup1 {
-  top: 400px;
-  right: -34px;
-  width: 621px;
-  height: 560px;
-}
+  .mainSection.center h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
 
-#mockup2 {
-  top: 415px;
-  left: 333px;
-  width: 464px;
-  height: 584px;
-}
+  .mainSection.center p {
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
 
-#mockup3 {
-  top: auto;
-  bottom: 0;
-  right: -30px;
-  width: 836px;
-  height: 483px;
-  border-radius: 5px 5px 0 0;
+  #mockup1 {
+    top: 400px;
+    right: -34px;
+    width: 621px;
+    height: 560px;
+  }
+
+  #mockup2 {
+    top: 415px;
+    left: 333px;
+    width: 464px;
+    height: 584px;
+  }
+
+  #mockup3 {
+    top: auto;
+    bottom: 0;
+    right: -30px;
+    width: 836px;
+    height: 483px;
+    border-radius: 5px 5px 0 0;
+  }
 }
